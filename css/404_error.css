@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "iran-sans";
+    src: url("../fonts/isans.eot")format("eot");
+    src: url("../fonts/isans.ttf")format("truetype");
+    src: url("../fonts/isans.woff")format("woff");
+    src: url("../fonts/isans.woff2")format("woff2");
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "iran-sans";
+    background-color: whitesmoke;
+    height: 200vh;
+}
+.container{
+    height: 100vh;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.5rem;
+}
+.btn{
+    border-radius: 2rem;
+    padding: 0.7rem 4rem;
+    margin-top: 1rem;
+}

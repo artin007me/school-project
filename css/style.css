@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "iran-sans";
+    src: url("../fonts/isans.eot")format("eot");
+    src: url("../fonts/isans.ttf")format("truetype");
+    src: url("../fonts/isans.woff")format("woff");
+    src: url("../fonts/isans.woff2")format("woff2");
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "iran-sans";
+    background-color: whitesmoke;
+    height: 200vh;
+}
+
+
+
+header {
+    z-index: 1000;
+    height: 10vh;
+}
+
+header .container-fluid {
+    background-color: rgb(50, 50, 50);
+    height: 100%;
+    width: 90%;
+    border-radius: 5rem;
+}
+
+.navbar ul {
+    position: relative;
+}
+.navbar  ul li{
+    list-style-type: none;
+}
+.navbar ul li a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar ul li a label {
+    cursor: pointer;
+}
+
+.navbar ul span {
+    border-bottom: 1px solid #aaaaaa;
+    width: 1rem;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.2s linear;
+    left: 733px;
+}
+
+#ra1:checked {
+    border-bottom: solid;
+    color: #aaaaaa;
+}
+header .container-fluid .row .left{
+    height: 100%;
+    margin-top: 0!important;
+}
+header .container-fluid .row .left .btn {
+    border: 1px solid #aaaaaa;
+    color: #aaaaaa;
+    padding: 0.8rem 2.7rem;
+    border-radius: 2rem;
+}
+
+.menu .btn {
+    color: #fff;
+    padding: 0.7rem 2.7rem;
+    margin-top: -2.3rem;
+    width: 95%;
+    margin-top: 2rem;
+    background-color: #5552e8;
+    border-radius: 2rem;
+}
+
+
+@media (max-width: 480px) {
+    header .container-fluid .row .left .btn {
+        padding: 0.5rem 2rem;
+        margin-top: 0rem;
+        position: absolute;
+        left: 0.5rem;
+        top: 47%;
+        transform: translateY(-50%);
+    }
+
+    header .container-fluid .row .main {
+        position: absolute;
+        left: 0.8rem;
+        top: 0;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-left: 0.8rem;
+    }
+
+    header .container-fluid {
+        height: 3.5rem;
+        margin-top: 1rem;
+        border-radius: 3rem;
+        width: 93%;
+    }
+
+    header .container-fluid .row .right-res {
+        position: absolute;
+        top: 1.9rem;
+        margin-right: 0.2rem;
+    }
+}
+
+header .container-fluid .row .right-res label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 0.5rem;
+}
+
+header .container-fluid .row .right-res label span {
+    background-color: #999;
+    height: 2px;
+    width: 2rem;
+    margin: 0.2rem 0;
+}
+
+#in1:checked~label .span1 {
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1.3rem;
+    top: 0.6rem;
+    transition: all 0.2s linear;
+}
+
+#in1:checked~label .span2 {
+    display: none;
+    transition: all 0.2s linear;
+}
+
+#in1:checked~label .span3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 1.3rem;
+    top: 0.6rem;
+    transition: all 0.2s linear;
+}
+
+.menu {
+    position: absolute;
+    height: 30rem;
+    width: 18rem;
+    padding-top: 2rem;
+    background-color: #202024c8;
+    z-index: 2;
+    right: 1rem;
+    top: 6rem;
+    transform: translateX(500px);
+    transition: all 0.2s ease-in-out;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    padding-right: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 0.6rem 0;
+}
+
+.menu ul li a {
+    color: #c5bab6;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.menu ul li a label {
+    cursor: pointer;
+}
+
+.menu-show {
+    transition: all 0.2s ease-in-out;
+    transform: translateX(0);
+}
+
+.main .logo a img {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------ header -------------- */
+.s1{
+    margin-top: 10rem;
+}
+@media (max-width: 480px){
+    .s1{
+        margin-top: 5rem;
+    }
+}
+.s1 .container .row .col-md-3{
+    border: 1px solid gray;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 0.363);
+}
+
+.s1 .container .row .col-md-3 svg{
+    scale: 3;
+}
+.s1 .container .row .col-md-3:hover{
+    transform: rotate(5deg);
+    transition: all 0.3s ease;
+}
